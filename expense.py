@@ -8,4 +8,6 @@ class Expense:
     def __str__(self) -> str:
         return f"<Expense: {self.name} , ${self.amount:.2f} , {self.category}>"
         
-
+    def __repr__(self):
+        return self.__str__()
+        
